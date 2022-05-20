@@ -34,4 +34,20 @@ router.post('/roles',verifyToken,AddRoles);
 router.put('/roles/:id',verifyToken,UpdateRoles);
 router.delete('/roles/:id',verifyToken,DeleteRoles);
 
+//route customer
+router.get('/customer',getCustomer);
+router.get('/customer/:id',getCustomerbyid);
+router.get('/customerbyname',getCustomerbyname);
+router.post('/customer',verifyToken,AddCustomer);
+router.put('/customer/:id',verifyToken,UpdateCustomer);
+router.delete('/customer/:id',verifyToken,DeleteCustomer);
+
+//route transaksi
+router.get('/transaksi',getTransaksi);
+router.get('/transaksi/:id',getTransaksibyid);
+router.get('/transaksibyname',getTransaksibyname);
+router.post('/transaksi',verifyToken,AddTransaksi);
+router.put('/transaksi/:id',verifyToken,UpdateTransaksi);
+router.delete('/transaksi/:id',verifyToken,DeleteTransaksi);
+
 export default router;
