@@ -4,6 +4,8 @@ import { verifyToken } from "../Middleware/VerifyToken.js";
 import { refreshToken } from "../controllers/RefreshToken.js";
 import { AddProduk, DeleteProduk, getProduk, getProdukbyid, getProdukbyname, UpdateProduk } from "../controllers/Produk.js";
 import { AddRoles, DeleteRoles, getRoles, getRolesbyid, getRolesbyname, UpdateRoles } from "../controllers/Roles.js";
+import { AddCustomer, DeleteCustomer, getCustomer, getCustomerbyid, getCustomerbyname, UpdateCustomer } from "../controllers/Customer.js";
+import { AddTransaksi, DeleteTransaksi, getTransaksi, getTransaksibyid, getTransaksibyname, UpdateTransaksi } from "../controllers/Transaksi.js";
 const router= Express.Router();
 
 router.get('/users',verifyToken,getusers);
